@@ -1,11 +1,27 @@
 {
-  "name": "onedb",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "onewebdb",
+  "version": "0.0.2",
+  "description": "Embedded Node.js database upward compatible with MongoDB",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlkBur/onedb.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "author": "BurA",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlkBur/onedb/issues"
+  },
+  "homepage": "https://github.com/AlkBur/onedb#readme"
 }
